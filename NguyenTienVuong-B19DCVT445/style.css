@@ -1,0 +1,63 @@
+:root {
+    --bg-color-1: #b83e63;
+    --bg-color-2: #b74642;
+    --border-color: #eee;
+    --padding-top: 50px;
+  }
+  button {
+    border: none;
+    outline: none;
+  }
+  body {
+    padding-top: var(--padding-top);
+    background-image: linear-gradient(
+      to bottom right,
+      var(--bg-color-1),
+      var(--bg-color-2)
+    );
+  }
+  .profile {
+    padding: var(--padding-top);
+    min-height: calc(100vh - var(--padding-top));
+    border-radius: 20px 20px 0 0;
+    background: white;
+  }
+  .header {
+  }
+  .avatar {
+    margin-left: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 2px 2px 20px 0 #ff00009e;
+  }
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .btn--action {
+    background-color: var(--bg-color-2) !important;
+  }
+  .info-caption {
+    position: relative;
+  }
+  .info-caption::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--border-color);
+  }
+  .info-caption__name {
+  }
+  .action__btn {
+    width: 120px !important;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 20px !important;
+  }
+  
